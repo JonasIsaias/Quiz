@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="start-screen">
+            <h1>Bem-vindo ao Quiz Tech</h1>
+            <button id="start-btn" class="btn">Iniciar Quiz</button>
+        </div>
+    
+        <div id="quiz-container" class="hidden">
+            <div class="timer" id="timer">Tempo restante: 60s</div>
+            <div id="question-container" class="question-container"></div>
+            <div id="options-container" class="options-container"></div>
+            <button id="prev-btn" class="btn hidden">Anterior</button>
+            <button id="next-btn" class="btn hidden">Próxima Pergunta</button>
+            <button id="submit-btn" class="btn hidden">Enviar Respostas</button>
+        </div>
+    
+        <div id="result-container" class="hidden">
+            <h2>Resultado</h2>
+            <p id="score"></p>
+            <ul id="incorrect-list"></ul>
+            <button id="reset-btn" class="btn">Reiniciar Quiz</button>
+        </div>
+        
+        <div id="time-up-message" class="hidden">
+            <p>O tempo acabou!</p>
+        </div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
